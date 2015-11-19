@@ -1,177 +1,36 @@
-# misc
-
 import time
-import random
 
-# welcome 
-
-print ('Hello! I am Macbot, a simple AI Bot!')
-
-time.sleep(2)
-
-print ('after every question there will be answers')
-time.sleep(1)
-print ('in brackets for you to pick from. Select')
-time.sleep(1)
-print ('one and type it to insert your answer!')
-
-time.sleep(2)
-
-print ('Do you want to proceed?')
-print ('(yes)(no)')
-
-start = input()
-
-if start == ('yes'):
-    print ("Cool, Let's get started")
-if start == ('no'):
-    print ('Okay, Bye!')
-    quit()
-    
-# intro
-
-time.sleep(2)
-    
-print ('What is your name?')
-print ('(type your name)')
-
-name = input()
-
-print ('Hi ' + name + ', how are you?')
-print ('(great)(okay)(not great)')
-
-feeling = input()
-
-if feeling == ('great'):
-    print ("That's good!")
-if feeling == ('okay'):
-    print ('Good good')
-if feeling == ('not great'):
-    print ("Oh sorry, what's wrong?")
-    print ("(type what's wrong)")
-    
-    problem = input()
-    
-    problem = random.getrandbits(1)
-    
-    if problem == 1:
-        print ("Oh I'm sure you can sort that out!")
-    if problem == 0:
-        print ('That sucks!')
-
-# Games
-
-time.sleep(2)
-
-print ('Do you play any computer games?')
-print ('(yes)(no)')
-
-game = input()
-
-if game == ('yes'):
-    print ('oh cool! what games do you enjoy?')
-    print ('(type a game)')
-
-    gamechoice = input()
-    
-    gamegen = random.getrandbits(1)
-
-    if gamegen == 1:
-        print ('I love that game!')
-    if gamegen == 0:
-        print ('I never really liked that game')
-
-if game == ('no'):
-    print ('So do you prefer to be outside, or do other')
-    time.sleep(1)
-    print ('things inside?')
-    print ('(outside)(inside)')
-    
-    outin = input()
-    
-    if outin == ('inside'):
-        print ('Oh thats cool!')
-        time.sleep(1)
-        print ('Do you like sports?')
-        print ('(yes)(no)')
-        
-        sports = input()
-        
-        if sports == ('no'):
-            print ('Okay.')
-            quit()
-        if sports == ('yes'):
-            print ('Cool, ')
-        
-    if outin == ('outside'):
-        print ('Cool, ')
- 
-print ('what sports do you like')
-print ('(type a sport)')
-        
-sportchoice = input()
-        
-sportgen = random.getrandbits(1)
-
-if sportgen == 1:
-    print ('I love that sport')
-if sportgen == 2:
-    print ('I hate that sport')
-if sportgen == 0:
-    print ('I have never heard of that sport')
-    
-time.sleep(2)
-
-print ('Tell me about school')
-
-time.sleep(1)
-
-# School
-
-print ('Do you like school')
-print ('(yes)(no)')
-
-school = input()
-
-if school == ('yes'):
-    print ('Good for you! Keep at it!')
-if school == ('no'):
-    print ("That's a shame, what makes you dislike it?")
-    print ("(type what you dont like about school)")
-    
-    badschool = input()
-    
-    badschoolgen = random.getrandbits(1)
-    
-    if badschoolgen == 1:
-        print ("Oh that's a shame!")
-    if badschoolgen == 2:
-        print ("That doesn't seem too bad, does it?")
-        
-# Pets
-
-time.sleep(2)
-
-print ('Do you have any pets?')
-print ('(type the name)')
-
-pet = input()
-
-print ("What's it like living with a " + pet + "?")
-print ("(type what it is like)")
-
-input()
-
-petgen = random.getrandbits(1)
-
-if petgen == 1:
-    print ("That sounds EPIC!")
-if petgen == 0:
-    print ("Seems legit...")
-if petgen == 2:
-    print ("I don't think i could handle that...")
-
-time.sleep(2)
-
-print ("does your " + pet + " like playing " + sportchoice + " with you?")
-print ("(yes)(no)")
+def cls():
+    print ("\n" * 40) 
+cls()
+print ('|')
+time.sleep(0.5)
+def cls():
+    print ("\n" * 40) 
+cls()
+print('_')
+time.sleep(0.5)
+def cls():
+    print ("\n" * 40) 
+cls()
+print ('|')
+time.sleep(0.5)
+def cls():
+    print ("\n" * 40) 
+cls()
+print('_')
+time.sleep(0.5)
+def cls():
+    print ("\n" * 40) 
+cls()
+time.sleep(0.5)
+def cls():
+    print ("\n" * 40) 
+print ('|')
+time.sleep(0.5)
+def cls():
+    print ("\n" * 40) 
+cls()
+print('_')
+cls()
+print ('|')
