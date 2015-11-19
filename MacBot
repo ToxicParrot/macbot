@@ -10,7 +10,9 @@ print ('Hello! I am Macbot, a simple AI Bot!')
 time.sleep(2)
 
 print ('after every question there will be answers')
+time.sleep(1)
 print ('in brackets for you to pick from. Select')
+time.sleep(1)
 print ('one and type it to insert your answer!')
 
 time.sleep(2)
@@ -45,7 +47,8 @@ if feeling == ('great'):
 if feeling == ('okay'):
     print ('Good good')
 if feeling == ('not great'):
-    print ('Oh sorry, whats wrong?')
+    print ("Oh sorry, what's wrong?")
+    print ("(type what's wrong)")
     
     problem = input()
     
@@ -60,10 +63,10 @@ if feeling == ('not great'):
 
 time.sleep(2)
 
-game = input()
-
 print ('Do you play any computer games?')
 print ('(yes)(no)')
+
+game = input()
 
 if game == ('yes'):
     print ('oh cool! what games do you enjoy?')
@@ -71,45 +74,46 @@ if game == ('yes'):
     print ('(team fortress 2)(call of duty)(ark survival)')
     
     games = input()
-    
-    if games == [('minecraft', 'portal', 'team fortress 2', 'ark survival')]:
-        print ("I love those games!")
+
+    if games == ('minecraft'):
+        print ('I love those games!')
+    if games == ('portal'):
+        print ('I love those games!')
+    if games == ('team fortress 2'):
+        print ('I love those games!')
+    if games == ('ark survival'):
+        print ('I love those games!')
         
-    if games == [('csgo', 'league of legends', 'call of duty')]:
+    if games == ('csgo'):
+        print ('I never really liked those')
+    if games == ('league of legends'):
+        print ('I never really liked those')
+    if games == ('call of duty'):
         print ('I never really liked those')
         
 if game == ('no'):
     print ('So do you prefer to be outside, or do other')
+    time.sleep(1)
     print ('things inside?')
     print ('(outside)(inside)')
     
     outin = input()
     
-    if outin == ('outside')
-
-# PREVIOUS
-
-            sports = raw_input()
-            
-            print "what sports do you play?"
-            
-            if sports in ["archery", "basketball", "sailing", "hockey"]:
-                print "I love those sports!"
-                
-            elif sports in ["cricket", "rugby", "football", "swimming"]:
-                print "I don't like those sports so much"
-                
-            else:
-                print "I've never heard of that sport"
-            
-        elif sport in "outside":
-            print "Sounds fun"
-            
-        else:
-            print "ERROR :-/"
+    if outin == ('inside'):
+        print ('Oh thats cool!')
+        time.sleep(2)
+        print ('Do you like sports?')
+        print ('(yes)(no)')
         
-    elif outside in "inside":
-        print "that sounds fun!"
+        sports = input()
         
-    else:
-        print "ERROR :-/"
+        if sports == ('no'):
+            print ('Okay.')
+            quit()
+        if sports == ('yes'):
+            print ('Cool, What sports do you like?')
+        
+    if outin == ('outside'):
+        print ('Cool, What sports do you like?')
+        
+print ('(basketball)(tennis)(rugby)(football)')
