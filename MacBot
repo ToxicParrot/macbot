@@ -56,46 +56,39 @@ if feeling == ('not great'):
     if solution == 0:
         print ('That sucks!')
 
+# Games
 
-# Previous
+time.sleep(2)
 
-time.sleep(3)
+game = input()
 
-games = raw_input()
+print ('Do you play any computer games?')
+print ('(yes)(no)')
 
-print "Do you play any computer games?"
-
-if games is "yes":
-    print "oh cool! what games do you enjoy?"
+if game == ('yes'):
+    print ('oh cool! what games do you enjoy?')
+    print ('(csgo)(portal)(minecraft)(league of legends)')
+    print ('(team fortress 2)(call of duty)(ark survival)')
     
-    gamechoose = raw_input()
+    games = input()
     
-    if gamechoose in ["minecraft", "portal", "ARK", "TF2"]:
-        print "Wow i love those games!"
+    if games == [('minecraft', 'portal', 'team fortress 2', 'ark survival')]:
+        print ("I love those games!")
         
-        # InGames
+    if games == [('csgo', 'league of legends', 'call of duty')]:
+        print ('I never really liked those')
+        
+if game == ('no'):
+    print ('So do you prefer to be outside, or do other')
+    print ('things inside?')
+    print ('(outside)(inside)')
     
-    if gamechoose in ["CSGO", "LOL", "COD"]:
-        print "I never really liked those"
-        
-    if gamechoose in "":
-        print "I have never heard of that game"
+    outin = input()
+    
+    if outin == ('outside')
 
-if gamechoose in "":
-    print "so do you prefer to be outside, or do you do other things inside?"
-    
-    outside = raw_input()
-    
-    if outside in "outside":
-        
-        sport = raw_input()
-        
-        print "So do you like sport, or just being outside?"
-        
-        if sport in "sport":
-            
-            # InSport
-            
+# PREVIOUS
+
             sports = raw_input()
             
             print "what sports do you play?"
