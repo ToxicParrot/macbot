@@ -70,14 +70,15 @@ game = input()
 
 if game == ('yes'):
     print ('oh cool! what games do you enjoy?')
+    print ('(type a game)')
 
-    games = input()
+    gamechoice = input()
     
-    games = random.gertandbits(1)
+    gamegen = random.getrandbits(1)
 
-    if games == 1:
+    if gamegen == 1:
         print ('I love that game!')
-    if games == 0:
+    if gamegen == 0:
         print ('I never really liked that game')
 
 if game == ('no'):
@@ -90,7 +91,7 @@ if game == ('no'):
     
     if outin == ('inside'):
         print ('Oh thats cool!')
-        time.sleep(2)
+        time.sleep(1)
         print ('Do you like sports?')
         print ('(yes)(no)')
         
@@ -100,16 +101,21 @@ if game == ('no'):
             print ('Okay.')
             quit()
         if sports == ('yes'):
-            print ('Cool, What sports do you like?')
+            print ('Cool, ')
         
     if outin == ('outside'):
-        print ('Cool, What sports do you like?')
+        print ('Cool, ')
+ 
+print ('what sports do you like')
+print ('(type a sport)')
         
 sportchoice = input()
         
-sportchoise = random.getrandbits(1)
+sportgen = random.getrandbits(1)
 
-if sportchoice == 1:
+if sportgen == 1:
     print ('I love that sport')
-if sportchoice == 2:
+if sportgen == 2:
     print ('I hate that sport')
+if sportgen == 0:
+    print ('I have never heard of that sport')
