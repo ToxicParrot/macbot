@@ -3,6 +3,7 @@
 import time
 import random
 
+
 # welcome 
 
 print ('Hello! I am Macbot, a simple AI Bot!')
@@ -27,6 +28,7 @@ if start == ('yes'):
 if start == ('no'):
     print ('Okay, Bye!')
     quit()
+
     
 # intro
 
@@ -58,40 +60,60 @@ if feeling == ('not great'):
         print ("Oh I'm sure you can sort that out!")
     if problem == 0:
         print ('That sucks!')
+        
+print ('what subject would you like to view')
+print ('(video games)')
+subject = input()
 
 # Games
+if subject in ('video games'):
 
-time.sleep(2)
-
-print ('Do you play any computer games?')
-print ('(yes)(no)')
-
-game = input()
-
-if game == ('yes'):
-    print ('oh cool! what games do you enjoy?')
-    print ('(type a game)')
-
-    gamechoice = input()
+    time.sleep(2)
     
-    gamegen = random.getrandbits(1)
+    print ('Do you play any computer games?')
+    print ('(yes)(no)')
+    
+    game = input()
+    
+    if game == ('yes'):
+        print ('oh cool! what games do you enjoy?')
+    
+        games = input()
+        
+        games = random.getrandbits(1)
+    
+        if games == 1:
+            print ('I love that game!')
+        if games == 0:
+            print ('I never really liked that game')
+        
+    if game == ('no'):
+        print ('well thats your choice')
+        
+    gamer = input()
+    gamer = random.getrandbits(4)
+    
+    if gamer == 1:
+        print('I mostly play call of duty: black ops 3')
+    if gamer == 0:
+        print('I mostly play fallout 4')
+    if gamer == 2:
+        print('I mostly play future soldier')
+    if gamer == 3:
+        print('I mostly play gta 5')
+    if gamer == 4:
+        print('I mostly play far cry 4')
 
-    if gamegen == 1:
-        print ('I love that game!')
-    if gamegen == 0:
-        print ('I never really liked that game')
+if subject in ('sports'):
 
-if game == ('no'):
-    print ('So do you prefer to be outside, or do other')
-    time.sleep(1)
-    print ('things inside?')
+    print ('wht sports do you do')
     print ('(outside)(inside)')
     
     outin = input()
     
     if outin == ('inside'):
         print ('Oh thats cool!')
-        time.sleep(1)
+        time.sleep(2)
         print ('Do you like sports?')
         print ('(yes)(no)')
         
@@ -101,21 +123,17 @@ if game == ('no'):
             print ('Okay.')
             quit()
         if sports == ('yes'):
-            print ('Cool, ')
+            print ('Cool, What sports do you like?')
         
     if outin == ('outside'):
-        print ('Cool, ')
- 
-print ('what sports do you like')
-print ('(type a sport)')
+        print ('Cool, What sports do you like?')
         
-sportchoice = input()
-        
-sportgen = random.getrandbits(1)
-
-if sportgen == 1:
-    print ('I love that sport')
-if sportgen == 2:
-    print ('I hate that sport')
-if sportgen == 0:
-    print ('I have never heard of that sport')
+    sportchoice = input()
+            
+    sportchoise = random.getrandbits(1)
+    
+    if sportchoice == 1:
+        print ('I love that sport')
+    if sportchoice == 2:
+        print ('I hate that sport')
+   
