@@ -135,7 +135,7 @@ if school == ('yes'):
     print ('Good for you! Keep at it!')
 if school == ('no'):
     print ("That's a shame, what makes you dislike it?")
-    print ("(type what you dont like about school)')
+    print ("(type what you dont like about school)")
     
     badschool = input()
     
