@@ -1,1 +1,122 @@
-# MacBot
+# misc
+
+import time
+import random
+
+# welcome 
+
+print ('Hello! I am Macbot, a simple AI Bot!')
+
+time.sleep(2)
+
+print ('after every question there will be answers')
+print ('in brackets for you to pick from. Select')
+print ('one and type it to insert your answer!')
+
+time.sleep(2)
+
+print ('Do you want to proceed?')
+print ('(yes)(no)')
+
+start = input()
+
+if start == ('yes'):
+    print ("Cool, Let's get started")
+if start == ('no'):
+    print ('Okay, Bye!')
+    quit()
+    
+# intro
+
+time.sleep(2)
+    
+print ('What is your name?')
+print ('(type your name)')
+
+name = input()
+
+print ('Hi ' + name + ', how are you?')
+print ('(great)(okay)(not great)')
+
+feeling = input()
+
+if feeling == ('great'):
+    print ("That's good!")
+if feeling == ('okay'):
+    print ('Good good')
+if feeling == ('not great'):
+    print ('Oh sorry, whats wrong?')
+    
+    problem = input()
+    
+    solution = random.getrandbits(1)
+    
+    if solution == 1:
+        print ("Oh I'm sure you can sort that out!")
+    if solution == 0:
+        print ('That sucks!')
+
+
+# Previous
+
+time.sleep(3)
+
+games = raw_input()
+
+print "Do you play any computer games?"
+
+if games is "yes":
+    print "oh cool! what games do you enjoy?"
+    
+    gamechoose = raw_input()
+    
+    if gamechoose in ["minecraft", "portal", "ARK", "TF2"]:
+        print "Wow i love those games!"
+        
+        # InGames
+    
+    if gamechoose in ["CSGO", "LOL", "COD"]:
+        print "I never really liked those"
+        
+    if gamechoose in "":
+        print "I have never heard of that game"
+
+if gamechoose in "":
+    print "so do you prefer to be outside, or do you do other things inside?"
+    
+    outside = raw_input()
+    
+    if outside in "outside":
+        
+        sport = raw_input()
+        
+        print "So do you like sport, or just being outside?"
+        
+        if sport in "sport":
+            
+            # InSport
+            
+            sports = raw_input()
+            
+            print "what sports do you play?"
+            
+            if sports in ["archery", "basketball", "sailing", "hockey"]:
+                print "I love those sports!"
+                
+            elif sports in ["cricket", "rugby", "football", "swimming"]:
+                print "I don't like those sports so much"
+                
+            else:
+                print "I've never heard of that sport"
+            
+        elif sport in "outside":
+            print "Sounds fun"
+            
+        else:
+            print "ERROR :-/"
+        
+    elif outside in "inside":
+        print "that sounds fun!"
+        
+    else:
+        print "ERROR :-/"
