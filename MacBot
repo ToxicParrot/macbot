@@ -52,11 +52,11 @@ if feeling == ('not great'):
     
     problem = input()
     
-    solution = random.getrandbits(1)
+    problem = random.getrandbits(1)
     
-    if solution == 1:
+    if problem == 1:
         print ("Oh I'm sure you can sort that out!")
-    if solution == 0:
+    if problem == 0:
         print ('That sucks!')
 
 # Games
@@ -70,27 +70,16 @@ game = input()
 
 if game == ('yes'):
     print ('oh cool! what games do you enjoy?')
-    print ('(csgo)(portal)(minecraft)(league of legends)')
-    print ('(team fortress 2)(call of duty)(ark survival)')
-    
-    games = input()
 
-    if games == ('minecraft'):
-        print ('I love those games!')
-    if games == ('portal'):
-        print ('I love those games!')
-    if games == ('team fortress 2'):
-        print ('I love those games!')
-    if games == ('ark survival'):
-        print ('I love those games!')
-        
-    if games == ('csgo'):
-        print ('I never really liked those')
-    if games == ('league of legends'):
-        print ('I never really liked those')
-    if games == ('call of duty'):
-        print ('I never really liked those')
-        
+    games = input()
+    
+    games = random.gertandbits(1)
+
+    if games == 1:
+        print ('I love that game!')
+    if games == 0:
+        print ('I never really liked that game')
+
 if game == ('no'):
     print ('So do you prefer to be outside, or do other')
     time.sleep(1)
@@ -116,4 +105,11 @@ if game == ('no'):
     if outin == ('outside'):
         print ('Cool, What sports do you like?')
         
-print ('(basketball)(tennis)(rugby)(football)')
+sportchoice = input()
+        
+sportchoise = random.getrandbits(1)
+
+if sportchoice == 1:
+    print ('I love that sport')
+if sportchoice == 2:
+    print ('I hate that sport')
