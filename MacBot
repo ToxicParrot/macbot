@@ -120,6 +120,8 @@ if sportgen == 2:
 if sportgen == 0:
     print ('I have never heard of that sport')
     
+time.sleep(2)
+
 print ('Tell me about school')
 
 time.sleep(1)
@@ -135,7 +137,7 @@ if school == ('yes'):
     print ('Good for you! Keep at it!')
 if school == ('no'):
     print ("That's a shame, what makes you dislike it?")
-    print ("(type what you dont like about school)')
+    print ("(type what you dont like about school)")
     
     badschool = input()
     
@@ -148,11 +150,28 @@ if school == ('no'):
         
 # Pets
 
+time.sleep(2)
+
 print ('Do you have any pets?')
-print ('(type the name of (one of) your pet(s)')
+print ('(type the name)')
 
 pet = input()
 
 print ("What's it like living with a " + pet + "?")
+print ("(type what it is like)")
 
+input()
 
+petgen = random.getrandbits(1)
+
+if petgen == 1:
+    print ("That sounds EPIC!")
+if petgen == 0:
+    print ("Seems legit...")
+if petgen == 2:
+    print ("I don't think i could handle that...")
+
+time.sleep(2)
+
+print ("does your " + pet + " like playing " + sportchoice + " with you?")
+print ("(yes)(no)")
